@@ -18,10 +18,12 @@ var (
 		Long: ` Find Information about the IP and formats it as such
 
 			IP 		
+            HOSTNAME
 			CITY 		
 			REGION 	
 			COUNTRY 	
 			COORDINATES 
+            ORGANIZAION
 			TIMEZONE 	
 			POSTAL CODE 	
 		
@@ -45,12 +47,14 @@ func init() {
 
 type Ip struct {
 	IP       string `json:"ip"`
-	City     string `json:"city"`
-	Region   string `json:"region"`
-	Country  string `json:"country"`
-	Location string `json:"loc"`
-	Timezone string `json:"timezone"`
-	Postal   string `json:"postal"`
+    HOSTNAME string `json:"hostname"`
+	CITY     string `json:"city"`
+	REGION   string `json:"region"`
+	COUNTRY  string `json:"country"`
+	LOCATION string `json:"loc"`
+    ORG      string `json:"org"`
+	POSTAL   string `json:"postal"`
+    TIMEZONE string `json:"timezone"`
 }
 
 func getData(url string) []byte {
@@ -92,11 +96,13 @@ func showData(ip string) {
 func display(data Ip) {
 
 	fmt.Printf("IP: 		%s\n", data.IP)
-	fmt.Printf("CITY: 		%s\n", data.City)
-	fmt.Printf("REGION: 	%s\n", data.Region)
-	fmt.Printf("COUNTRY: 	%s\n", data.Country)
-	fmt.Printf("COORDINATES: 	%s\n", data.Location)
-	fmt.Printf("TIMEZONE: 	%s\n", data.Timezone)
-	fmt.Printf("POSTAL CODE: 	%s\n", data.Postal)
+	fmt.Printf("HOSTNAME:       %s\n", data.HOSTNAME)
+	fmt.Printf("CITY: 		%s\n", data.CITY)
+	fmt.Printf("REGION: 	%s\n", data.REGION)
+	fmt.Printf("COUNTRY: 	%s\n", data.COUNTRY)
+	fmt.Printf("COORDINATES: 	%s\n", data.LOCATION)
+	fmt.Printf("ORGANIZAION: 	%s\n", data.ORG)
+	fmt.Printf("TIMEZONE: 	%s\n", data.TIMEZONE)
+	fmt.Printf("POSTAL CODE: 	%s\n", data.POSTAL)
 
 }
