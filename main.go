@@ -1,9 +1,9 @@
 package main
 
 import (
-    "iptracker.go/cmd"
+	"iptracker.go/cmd"
 )
 
 func main() {
-    cmd.Execute()
+	cmd.Execute()
 }

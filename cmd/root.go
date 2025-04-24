@@ -5,11 +5,11 @@ import (
 )
 
 var (
-	rootCmd = &cobra.Command {
-		Use: "cobra",
+	rootCmd = &cobra.Command{
+		Use:   "iptracker",
 		Short: "IPtracker CLI app.",
-		Long: `IPtracker CLI app.`,
-	} 
+		Long:  `IPtracker CLI app.`,
+	}
 )
 
 func Execute() error {
