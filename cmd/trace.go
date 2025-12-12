@@ -93,6 +93,6 @@ func display(data InternetInfo) {
 	green.Printf("REGION: %s\n", data.REGION)
 	green.Printf("COUNTRY: %s\n", data.COUNTRY)
 	green.Printf("LOCATION: %s\n", data.LOCATION)
+	green.Printf("TIMEZONE: %s\n", data.TIMEZONE)
 	green.Printf("ORGANIZATION: %s\n", data.ORGANIZATION)
-	green.Printf("POSTAL CODE: %s\n", data.TIMEZONE)
 }
