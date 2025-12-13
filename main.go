@@ -1,7 +1,7 @@
 package main
 
 import (
-	"iptracker.go/cmd"
+	"routescout/cmd"
 )
 
 func main() {
