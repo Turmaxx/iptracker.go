@@ -1,4 +1,4 @@
-module iptracker.go
+module routescout
 
 go 1.18
 
