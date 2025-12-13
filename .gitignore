@@ -1,3 +1,6 @@
+# go build output binary
+routescout
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
