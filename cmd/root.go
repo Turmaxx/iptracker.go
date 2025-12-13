@@ -6,9 +6,9 @@ import (
 
 var (
 	rootCmd = &cobra.Command{
-		Use:   "iptracker",
-		Short: "IPtracker CLI app.",
-		Long:  `IPtracker CLI app.`,
+		Use:   "routescout",
+		Short: "routescout CLI app.",
+		Long:  `routescout CLI app.`,
 	}
 )
 
