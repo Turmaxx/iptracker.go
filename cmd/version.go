@@ -12,7 +12,7 @@ var (
 		Short: "Shows version",
 		Long:  "Displays the version of the application",
 		Run: func(cmd *cobra.Command, args []string) {
-			fmt.Println("v1.2")
+			fmt.Println("v1.3")
 		},
 	}
 )
